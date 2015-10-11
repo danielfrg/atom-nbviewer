@@ -1,10 +1,9 @@
 {
   "name": "nbviewer",
   "main": "./lib/nbviewer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Jupyter Notebook Viewer",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "nbviewer:toggle",
     ".tree-view .file .name[data-name$=\\.ipynb]": "nbviewer:preview-file"
