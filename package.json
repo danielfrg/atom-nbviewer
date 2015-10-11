@@ -1,0 +1,23 @@
+{
+  "name": "nbviewer",
+  "main": "./lib/nbviewer",
+  "version": "0.1.0",
+  "description": "Jupyter Notebook Viewer",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "nbviewer:toggle",
+    ".tree-view .file .name[data-name$=\\.ipynb]": "nbviewer:preview-file"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielfrg/nbviewer"
+  },
+  "license": "Apache 2.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.0"
+  }
+}
