@@ -76,7 +76,9 @@ class NbviewerView extends ScrollView
   renderHTML: ->
     _self = this
 
-    cmd = "/Users/drodriguez/anaconda/bin/jupyter-nbconvert " + @getPath() + " --to html --output /tmp/" + @getOutputPath()
+    bin = atom.config.get('nbviewer.jupyterConvertBin')
+    # bin = atom.config.get('linter.showErrorTabLine')
+    cmd = bin + " " + @getPath() + " --to html --output /tmp/" + @getOutputPath()
     child = exec(cmd,
           cwd: "/tmp",
           (error, stdout, stderr) ->

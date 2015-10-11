@@ -4,10 +4,11 @@ url = require 'url'
 NbviewerView = require './nbviewer-view'
 
 module.exports =
-  # config:
-  #   jupyter_convert_bin:
-  #     type: 'text'
-  #     default: false
+  config:
+    jupyterConvertBin:
+      type: 'string'
+      default: 'jupyter-nbconvert'
+      description: 'Command or path to jupyter-convert executable'
 
   nbviewerView: null
   subscriptions: null
