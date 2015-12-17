@@ -77,8 +77,9 @@ class NbviewerView extends ScrollView
     _self = this
 
     bin = atom.config.get('nbviewer.jupyterConvertBin')
-    # bin = atom.config.get('linter.showErrorTabLine')
-    cmd = bin + " " + @getPath() + " --to html --output /tmp/" + @getOutputPath()
+    console.log(@getPath())
+    cmd = bin + " \"" + @getPath() + "\" --to html --output /tmp/" + "\"" + @getOutputPath() + "\""
+    console.log(cmd)
     child = exec(cmd,
           cwd: "/tmp",
           (error, stdout, stderr) ->
