@@ -3,11 +3,10 @@
   "main": "./lib/nbviewer",
   "version": "1.0.2",
   "description": "Jupyter Notebook Viewer",
-  "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "nbviewer:toggle",
-    ".tree-view .file .name[data-name$=\\.ipynb]": "nbviewer:preview-file"
-  },
+  "keywords": [
+    "Jupyter",
+    "Notebook"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/danielfrg/atom-nbviewer"
@@ -18,5 +17,14 @@
   },
   "dependencies": {
     "atom-space-pen-views": "^2.0.0"
-  }
+  },
+  "activationCommands": {
+    "atom-workspace": [
+      "nbviewer:toggle",
+      "nbviewer:preview-file"
+    ]
+  },
+  "workspaceOpeners": [
+    "jupyter://"
+  ]
 }

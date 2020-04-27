@@ -14,13 +14,13 @@ $ apm install nbviewer
 
 ## Configuration
 
-- **jupyterConvertBin**: Command or path to `jupyter-nbconvert` executable
+- **jupyterNBConvertBin**: Command or path to `jupyter-nbconvert` executable
 
 Example:
 
 ```
 "*":
   "nbviewer":
-    "jupyterConvertBin": "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
+    "jupyterNBConvertBin": "/Users/danielfrg/conda/bin/jupyter-nbconvert"
 
 ```
