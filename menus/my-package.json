@@ -1,0 +1,22 @@
+{
+  "context-menu": {
+    "atom-text-editor": [{
+      "label": "NBViewer: Preview File",
+      "command": "nbviewer:toggle"
+    }],
+    ".tree-view .file .name[data-name$=\\.ipynb]": [{
+      "label": "NBViewer: Preview",
+      "command": "nbviewer:preview-file"
+    }]
+  },
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "NBViewer",
+      "submenu": [{
+        "label": "Preview File",
+        "command": "nbviewer:toggle"
+      }]
+    }]
+  }]
+}
